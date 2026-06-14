@@ -11,4 +11,5 @@ for i in arr:
 
 sorted_arr = sorted(freq.items(), key = lambda x: -x[1])
 print(sorted_arr[0][0], 'occured', sorted_arr[0][1], 'times')
+
 print("Sorted array:", sorted_arr)

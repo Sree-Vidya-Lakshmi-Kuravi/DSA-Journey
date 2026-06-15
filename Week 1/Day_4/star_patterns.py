@@ -136,18 +136,41 @@ def arrow(n):
 ## Hollow diamond
 def hollow_diamond(n):
     # upward triangle
-    for i in range(0, n):
-        for s in range(0, (n-i)+1):
+    for i in range(n):
+        for j in range(n-i):
             print("*", end = " ")
-        for j in range(i*2 + 1):
+        for s in range((i*2) - 1):
             print(' ', end = " ")
+        for k in range(n-i):
+            print("*", end = " ")
         print()
 
     # downward triangle
-    for i in range(0, n):
-        for s in range(0, i+2):
+    for i in range(n):
+        for j in range(i+1):
             print("*", end = " ")
-        for j in range(((n-i)*2)-1, 0, -1):
+        for sp in range(((n-i-1)*2)-1, 0, -1):
             print(" ", end = " ")
+        for j in range(i+1):
+            print("*", end = " ")
         print()
-hollow_diamond(5)
+# hollow_diamond(5)
+
+def butterfly(n):
+    for i in range(n):
+        for j in range(i + 1):
+            print('*', end='')
+        for j in range((n - i) * 2 - 1):
+            print(' ', end = '')
+        for j in range(i + 1):
+            print('*', end = '')
+        print()
+    for i in range(n):
+        for j in range(n - i - 1):
+            print('*', end = '')
+        for j in range((i*2)+3):
+            print(' ', end = '')
+        for j in range(n - i - 1):
+            print('*', end = '')
+        print()
+butterfly(5)

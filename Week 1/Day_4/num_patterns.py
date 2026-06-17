@@ -112,3 +112,50 @@ def square_num(n):
             print(value, end = " ")
         print()
 # square_num(4)
+
+
+# centered pascal triangle
+#       A
+#     A B A
+#   A B C B A
+# A B C D C B A
+
+def pascal_tri(n):
+    for i in range(0, n+1):
+        for sp in range(0, (n-i)):
+            print(" ", end = " ")
+
+        p = (i*2 + 1)//2
+        ch = ord('A')
+
+        for j in range(0, i*2+1):
+            print(chr(ch), end = " ")
+
+            if j < p:
+                ch += 1
+            else:
+                ch -= 1
+        print()
+# pascal_tri(4)
+#       1
+#     1 2 1
+#   1 2 3 2 3
+# 1 2 3 4 3 2 1
+def cen_pascal_tri(n):
+    for i in range(0, n+1):
+        for sp in range(0, n-1):
+            print(" ", end = " ")
+        
+        p = (i*2 + 1)//2
+        num = 1
+
+        for j in range(0, i*2 + 1):
+            print(num, end = " ")
+
+            if j < p:
+                num += 1
+            else:
+                num -= 1
+        print()
+cen_pascal_tri(4)
+

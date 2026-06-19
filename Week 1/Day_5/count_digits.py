@@ -2,7 +2,7 @@
 def count_dig(n: int):
     count = 0
     while n > 0:
-        n //= 10
+        n //= 10  # removes the last digit
         count += 1
     print(f"Number of digits in {n}:", count)
 

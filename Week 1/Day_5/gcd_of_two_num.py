@@ -4,8 +4,9 @@
 # Else, gcd(a, b) = gcd(b, b%a)
 # Continue until the remainder becomes zero. The non-zero number at that point is the GCD
 
-def gcd_of_two_num(a: int, b: int):
+def gcd(a: int, b: int):
     while b != 0:
-        a, b = b, b%a
+        rem = a % b
+        a, b = b, rem
     return a
-print(gcd_of_two_num(48, 18))
+print(gcd(18, 48))

@@ -6,7 +6,7 @@
 
 def gcd(a: int, b: int):
     while b != 0:
-        rem = a % b
+        rem = a % b  # gives the remainder
         a, b = b, rem
     return a
 print(gcd(18, 48))

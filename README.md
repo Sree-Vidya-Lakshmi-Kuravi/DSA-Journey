@@ -12,3 +12,10 @@
     - Armstrong number
     - Check whether a number is prime or not
     - Print all the divisors of a numbers
+- Basic Recursion Problems
+    - Print numbers from 1 to N
+    - Print numbers from N to 1
+    - Sum of first N natural numbers
+    - Factorial of a given number
+    - Fibonacci series
+    - Check whether the given number is palindrome or not

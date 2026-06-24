@@ -19,3 +19,6 @@
     - Factorial of a given number
     - Fibonacci series
     - Check whether the given number is palindrome or not
+- Basic Hashing Problems
+    - Counting the frequency of array elements
+    - Finding the highest occurring element in an array

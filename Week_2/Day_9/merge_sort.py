@@ -2,6 +2,7 @@
 
 arr = [38, 27, 43, 3]
 
+# splitting (dividing)
 def mergeSort(arr):
     if len(arr) <= 1:
         return arr
@@ -12,7 +13,7 @@ def mergeSort(arr):
 
     return merge(left, right)
 
-
+# merging (joining)
 def merge(left, right):
     res = []
     i = j = 0
